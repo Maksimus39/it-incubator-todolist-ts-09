@@ -22,11 +22,15 @@ export type TodolistType = {
     title: string
     filter: FilterValuesType
 }
-
 export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
 
+
+// const Fake = React.memo( (props: any) => {
+//     console.log('Fake is kalled')
+//     return <h1>{props.count}</h1>
+// })
 
 function AppWithRedux() {
 
@@ -92,6 +96,12 @@ function AppWithRedux() {
             <Container fixed>
                 <Grid container style={{padding: "20px"}}>
                     <AddItemForm addItem={addTodolist}/>
+
+
+                    {/*<Fake count={10}/>*/}
+
+
+
                 </Grid>
                 <Grid container spacing={3}>
                     {
